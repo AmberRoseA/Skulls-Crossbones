@@ -15,12 +15,21 @@ body {
 
 /*-----Heading*/
 .heading {
-    text-align: center;
-    font-size: 2.5rem;
+    position: relative;
+    color: #fffefe;
+    background-color: #fffefe;
+    -webkit-text-stroke: 1px black;
+    font-size: 38px;
+    text-transform: uppercase;
+    
 }
 
 .logo {
-    height: 3em;
+    height: 15em;
+    position: relative;
+    margin-top: 0;
+    
+    
 }
 
 /*-----GameArea*/
@@ -50,4 +59,3 @@ body {
     display: none;
 }
 
-@
