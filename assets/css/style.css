@@ -9,51 +9,51 @@ body {
 /*-----Heading*/
 .heading {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .logo {
-    height: 9rem;
+    height: 3em;
 }
 
 /*-----GameArea*/
 .game-area {
-    background-color: #90d0c2;
-    height: 100vh;
-    width: 100vh;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    flex-direction: column;
+    background-color: #939393;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
 
 #board {
-    width: 60vw;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 100px;
-    margin-top: 40px;
-}
-
-.box {
-    height: 20vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #6de55a;
+    background-color: #dadcc6;
+    width: 65%;
 }
 
 /*---- ScoreArea*/
 .score-area {
+    background-color: aquamarine;
+    width: 50%;
     font-size: 2rem;
-    box-shadow: inset;
-    text-align: left;
-    padding-left: 5rem;
+    margin: auto;
+    padding: 50px 0;
 }
+
 .score-skull {
     height: 4.5rem;
 }
 .score-bones { 
     height: 4.5rem;
+}
+
+.controls-heading {
+    display: none;
+}
+
+.controls-desktop {
+    display: none;
 }
