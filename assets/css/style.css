@@ -1,0 +1,31 @@
+/*------GlobalStyle*/
+body {
+    background-color: #777877;
+    font-family: "Acme", sans-serif;
+    color: #ffff;
+    text-align: center;
+}
+
+/*-----Heading*/
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.logo {
+    height: 9rem;
+}
+
+/*---- ScoreArea*/
+.score-area {
+    font-size: 2rem;
+    box-shadow: inset;
+    text-align: left;
+    padding-left: 5rem;
+}
+.score-skull {
+    height: 4.5rem;
+}
+.score-bones { 
+    height: 4.5rem;
+}
