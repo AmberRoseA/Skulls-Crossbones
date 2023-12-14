@@ -16,6 +16,34 @@ body {
     height: 9rem;
 }
 
+/*-----GameArea*/
+.game-area {
+    background-color: #90d0c2;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+}
+
+#board {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+.box {
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6de55a;
+}
+
 /*---- ScoreArea*/
 .score-area {
     font-size: 2rem;
