@@ -6,6 +6,7 @@
 }
 
 body {
+    background-image: url("../images/background.png");
     background-color: #777877;
     font-family: "Acme", sans-serif;
     color: #ffff;
