@@ -33,20 +33,23 @@ body {
 }
 
 /*-----GameArea*/
-.game-area {
-    width: 85%;
-    background-color: #fffefe;
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 8%;
+.box {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    cursor: pointer;
 }
 
 #board {
-    background-image: url('../images/gridone.png');
-    height: 100px;
-    width:60px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
 
 }
+
 /*---- ScoreArea*/
 .score-area {
     background-color: #f2c6fd;
