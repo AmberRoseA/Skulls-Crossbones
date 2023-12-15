@@ -33,15 +33,23 @@ body {
 }
 
 /*-----GameArea*/
-
+.game-area {
+    width: 85%;
+    background-color: #fffefe;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 8%;
+}
 
 /*---- ScoreArea*/
 .score-area {
-    background-color: aquamarine;
-    width: 50%;
+    
+    width: 8em;
+    height: 8em;
     font-size: 2rem;
     margin: auto;
-    padding: 50px 0;
+   
+
 }
 
 .score-skull {
