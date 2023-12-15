@@ -49,20 +49,33 @@ body {
 }
 /*---- ScoreArea*/
 .score-area {
-    
-    width: 8em;
-    height: 8em;
+    background-color: #f2c6fd;
+    width: 10em;
+    height: 18em;
     font-size: 2rem;
-    margin: auto;
+    margin-left: 5%;
+    padding-top: 3%;
    
 
 }
 
-.score-skull {
-    height: 4.5rem;
+.scores {
+    display: flexbox;
+    justify-content: space-evenly;
+
 }
+
+/*-----Score icons*/
+.score-skull {
+    height: 6.5rem;
+}
+
+.score-tie {
+    height : 9.5rem;
+}
+
 .score-bones { 
-    height: 4.5rem;
+    height: 6.5rem;
 }
 
 .controls-heading {
