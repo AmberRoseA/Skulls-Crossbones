@@ -78,6 +78,20 @@ body {
     height: 6.5rem;
 }
 
+/*Refresh button*/
+.reset-game {
+    background-color: #f2c6fd;
+    font-family: "Acme", sans-serif;
+    font-size: 3em;
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    width: 50rem;
+    height: 5rem;
+}
+
 .controls-heading {
     display: none;
 }

@@ -7,7 +7,7 @@
 ### Future Features
 
 ## UX/UI SECTION
-### Design
+### Wireframes
 #### Desktop view 
 #### mobile view
 
