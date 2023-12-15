@@ -41,6 +41,12 @@ body {
     margin-left: 8%;
 }
 
+#board {
+    background-image: url('../images/gridone.png');
+    height: 100px;
+    width:60px;
+
+}
 /*---- ScoreArea*/
 .score-area {
     
@@ -67,3 +73,13 @@ body {
     display: none;
 }
 
+@media screen and (min-width: 1401px) {
+
+    .controls-heading {
+        display: flex;
+    }
+    
+    .controls-desktop {
+        display: flex;
+    }
+}        
