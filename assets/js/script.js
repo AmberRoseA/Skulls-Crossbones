@@ -15,3 +15,33 @@ const winConditions = [
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let running = false;
+
+// Functions 
+
+funtion initializeGame(){
+
+}
+
+function boxClicked(){
+
+}
+
+function updateBox(box, index){
+
+}
+
+function changePlayer(){
+
+}
+
+function checkWinner(){
+
+}
+
+funtion updateScore(){
+
+}
+
+funtion restartGame(){
+    
+}
