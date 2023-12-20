@@ -75,7 +75,7 @@ body {
 
 
 /*---- ScoreArea*/
-.scoreArea {
+.score-area {
     display: flex;
     flex-direction: column;
     background-color: #f2c6fd;
@@ -84,12 +84,6 @@ body {
     font-size: 2rem;
     margin-left: 5%;
     padding-top: 3%;
-}
-
-.game-area>#board,
-.game-area>.scoreArea {
-    margin: 0;
-    /* Reset margin to ensure they are flush against each other */
 }
 
 
@@ -115,21 +109,3 @@ body {
     height: 5rem;
 }
 
-.controls-heading {
-    display: none;
-}
-
-.controls-desktop {
-    display: none;
-}
-
-@media screen and (min-width: 1401px) {
-
-    .controls-heading {
-        display: flex;
-    }
-    
-    .controls-desktop {
-        display: flex;
-    }
-}        
