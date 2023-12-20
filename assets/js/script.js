@@ -49,7 +49,6 @@ function boxClicked() {
 
 function updateBox(box, index) {
     options[index] = currentPlayer;
-    box.textContent = currentPlayer;
 
     changePlayer();
 }
