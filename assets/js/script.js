@@ -89,11 +89,16 @@ function updateScore(){
 
 }
 
-function restartGame(){
+function restartGame() {
     currentPlayer = X;
     options = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s turn`;
-    box.forEach(box => box.textContent = "");
+
+    // Clear the content of each box
+    box.forEach(boxElement => {
+        boxElement.textContent = ""; // Clear any text content
+        boxElement.style.backgroundImage = ""; // Clear the background image
+    });
+
     running = true;
-    
 }
