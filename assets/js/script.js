@@ -23,6 +23,7 @@ funtion initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
     restartBtn.addEventListener("clicked", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
+    running = true;
 
 }
 
@@ -86,5 +87,10 @@ funtion updateScore(){
 }
 
 funtion restartGame(){
+    currentPlayer = "X";
+    options = ["", "", "", "", "", "", "", "", ""];
+    statusText.textContent = `${currentPlayer}'s turn`;
+    box.forEach(box => box.textContent = "");
+    running = true;
     
 }
