@@ -14,12 +14,12 @@ const winConditions = [
 
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
-let running = false;
+let running = false; 
 
 initializeGame();
 
 // Functions 
-funtion initializeGame(){
+function initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
     restartBtn.addEventListener("clicked", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
@@ -28,20 +28,21 @@ funtion initializeGame(){
 }
 
 function boxClicked(){
-    const dataCell = this.getAttribute("dataCell");
+    const boxIndex = this.getAttribute("boxIndex");
 
-    if(options[dataCell] != "" || !running){
+    if(options[boxIndex] != "" || !running){
         return;
     }
 
-    updateBox(this, dataCell);
+    updateBox(this, boxIndex);
     checkWinner();
 
 }
 
-function updateBox(box, data){
-    options[data] = currentPlayer;
+function updateBox(box, index){
+    options[index] = currentPlayer;
     box.textContent = currentPlayer;
+    
 
 }
 
@@ -58,7 +59,7 @@ function checkWinner(){
         const condition = winConditions[i];
         const boxA = options[condition[0]];
         const boxB = options[condition[1]];
-        const boxc = options[condition[2]];
+        const boxC = options[condition[2]];
 
         if(boxA == "" || boxB == "" || boxC == ""){
             continue;
@@ -82,11 +83,11 @@ function checkWinner(){
 
 }
 
-funtion updateScore(){
+function updateScore(){
 
 }
 
-funtion restartGame(){
+function restartGame(){
     currentPlayer = "X";
     options = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s turn`;

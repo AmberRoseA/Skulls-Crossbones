@@ -24,17 +24,20 @@
     
     <div class="game-area">
         <div id="board">
-            <div class="box" dataCell="0"></div>
-            <div class="box" dataCell="1"></div>
-            <div class="box" dataCell="2"></div>
-            <div class="box" dataCell="3"></div>
-            <div class="box" dataCell="4"></div>
-            <div class="box" dataCell="5"></div>
-            <div class="box" dataCell="6"></div>
-            <div class="box" dataCell="7"></div>
-            <div class="box" dataCell="8"></div>
+            <div class="img"></div>
+            <div boxIndex ="0" class="box"></div>
+            <div boxIndex ="1" class="box"></div>
+            <div boxIndex ="2" class="box"></div>
+            <div boxIndex ="3" class="box"></div>
+            <div boxIndex ="4" class="box"></div>
+            <div boxIndex ="5" class="box"></div>
+            <div boxIndex ="6" class="box"></div>
+            <div boxIndex ="7" class="box"></div>
+            <div boxIndex ="8" class="box"></div>
             
         </div>
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Reset Game</button>
 
     </div>
     <div class="score-area">
@@ -60,7 +63,7 @@
              A, S, D: Middle row of the grid.
              Z, X, C: Bottom row of the grid.
         </p>
-        <button class="reset-game" onclick="resetGame()">Reset Game</button>
+
 
     </div>
     <footer></footer>
