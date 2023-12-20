@@ -1,5 +1,6 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#statusText');
+const scores = document.querySelector('.scoreArea');
 const restartBtn = document.querySelector('#restartBtn');
 const X = document.querySelector('.playerX');
 const O = document.querySelector('.playerO');
@@ -24,7 +25,6 @@ initializeGame();
 // Functions 
 function initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
-    restartBtn.addEventListener("click", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
     running = true;
 
@@ -85,7 +85,8 @@ function checkWinner(){
 
 }
 
-function updateScore(){
+function updateScore(winner){
+
 
 }
 
