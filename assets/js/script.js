@@ -70,16 +70,9 @@ function changePlayer() {
 
 // Function to update scores
 function updateScores() {
-    // Update Skull score
-    skullScoreDisplay.style.backgroundImage = 'url("assets/images/skull.png")';
-
-    // Update Tie score
+    skullScoreDisplay.textContent = skullScore;
     tieScoreDisplay.textContent = tieScore;
-    tieScoreDisplay.style.backgroundImage = 'url("assets/images/tie.png")';
-
-    // Update Bone score
     boneScoreDisplay.textContent = boneScore;
-    boneScoreDisplay.style.backgroundImage = 'url("assets/images/bones.png")';
 }
 
 

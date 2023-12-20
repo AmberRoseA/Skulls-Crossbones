@@ -16,11 +16,13 @@ body {
 /*-----Heading*/
 .heading {
     position: relative;
-    color: #f2c6fd;
+    color: #9f4ab4;
     background-color: #fffefe;
-    -webkit-text-stroke: 1px black;
     font-size: 38px;
     text-transform: uppercase;
+    padding: 8px 0 8px 0;
+    letter-spacing: 2px;
+    word-spacing: 5px;
     
 }
 
@@ -104,15 +106,23 @@ body {
 
 /*Refresh button*/
 #restartBtn {
-    background-color: #f2c6fd;
+    background-color: #fffefe;
+    color: #9f4ab4;
     font-family: "Acme", sans-serif;
-    font-size: 3em;
-    display: flex;
-    position: relative;
-    margin-left: 5%;
-    margin-bottom: 10%;
+    font-size: 38px;
     text-align: center;
-    width: 50rem;
+    width: 30%;
     height: 5rem;
+    text-transform: uppercase;
+}
+
+#restartBtn:active {
+    background-color: #9f4ab4;
+    color: #fffefe;
+    text-align: center;
+    width: 30%;
+    height: 5rem;
+    text-transform: uppercase;
+
 }
 
