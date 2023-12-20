@@ -1,5 +1,6 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#statusText');
+// const restart here
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -9,4 +10,8 @@ const winConditions = [
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]
-]
+];
+
+let options = ["", "", "", "", "", "", "", "", ""];
+let currentPlayer = "X";
+let running = false;
