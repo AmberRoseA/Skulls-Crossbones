@@ -4,6 +4,9 @@ const scoresElement = document.querySelector('.scoreArea');
 const restartBtn = document.querySelector('#restartBtn');
 const X = document.querySelector('.playerX');
 const O = document.querySelector('.playerO');
+const scoreSkull = document.querySelector('#pointSkull');
+const scoreBones = document.querySelector('#pointCrossbones')
+const scoreTie = document.querySelector('#pointTie')
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
