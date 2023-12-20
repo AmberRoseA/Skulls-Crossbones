@@ -40,6 +40,9 @@ function boxClicked() {
         return;
     }
 
+    // Set the background image based on the current player
+    this.style.backgroundImage = (currentPlayer === pX) ? 'url("assets/images/bones.png")' : 'url("assets/images/skull.png")';
+
     updateBox(this, boxIndex);
     checkWinner();
 }
@@ -48,13 +51,6 @@ function updateBox(box, index) {
     options[index] = currentPlayer;
     box.textContent = currentPlayer;
 
-    // Set the background image based on the current player
-    if (currentPlayer === pX) {
-        box.style.backgroundImage = `url("assets/images/bones.png")`;
-    } else {
-        box.style.backgroundImage = `url("assets/images/skull.png")`;
-    }
-
     changePlayer();
 }
 
@@ -62,7 +58,6 @@ function changePlayer() {
     currentPlayer = (currentPlayer === pX) ? pO : pX;
     statusText.textContent = `${currentPlayer}'s turn`;
 }
-
 
 function checkWinner() {
     let roundWon = false;
@@ -88,29 +83,5 @@ function checkWinner() {
     } else if (!options.includes("")) {
         statusText.textContent = `Tie!`;
         running = false;
-    } else {
-        changePlayer();
     }
-
-/**
- * Gets the current tally of Games one by Skull from the DOM and increments it by 1
- */
-function incrementSkullScore() {
-    let oldScore = parseInt(document.getElementById("skull-score").innerText);
-    document.getElementById("skull-score").innerText = ++oldScore;
-
 }
-
-/**
- * Gets the current tally of Games one by Crossbones from the DOM and increments it by 1
- */
-function incrementBoneScore() {
-
-    let oldScore = parseInt(document.getElementById("bone-score").innerText);
-    document.getElementById("bone-score").innerText = ++oldScore;
-
-}
-
-/**
- * Gets the current tally of Tied Game from the DOM and increments it by 1
- */
