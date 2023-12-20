@@ -1,9 +1,8 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#status-text');
-const scorePoints = document.querySelector('.score-options')
+const scorePoints = document.querySelector('.score-options');
 const restartBtn = document.querySelector('#restartBtn');
-const X = document.querySelector('.playerX');
-const O = document.querySelector('.playerO');
+
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -15,7 +14,9 @@ const winConditions = [
     [2, 4, 6]
 ];
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = X;
+let x = document.querySelector('.playerX');
+let o = document.querySelector('.playerO')
+let currentPlayer = x;
 let running = false;
 
 initializeGame();
@@ -61,7 +62,7 @@ function checkWinner() {
         if (boxA == "" || boxB == "" || boxC == "") {
             continue;
         }
-        if (boxA == boxlB && boxB == boxC) {
+        if (boxA == boxB && boxB == boxC) {
             roundWon = true;
             break;
         }
@@ -79,12 +80,8 @@ function checkWinner() {
         changePlayer();
 }
 
-function updateScorePoints()
+function updateScorePoints(){
 
-function restartGame() {
-    currentPlayer = X;
-    options = ["", "", "", "", "", "", "", "", ""];
-    statusText.textContent = `${currentPlayer}'s turn`;
-    box.forEach(box => box.textContent = "");
-    running = true;
 }
+
+function restartGame
