@@ -96,6 +96,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f2c6fd;
+    color: #37013c;
     width: 10em;
     height: 16em;
     border: 2px solid;
