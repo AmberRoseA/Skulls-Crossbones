@@ -26,7 +26,9 @@ initializeGame();
 // Functions 
 function initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
-    statusText.textContent = `${currentPlayer}'s turn`;
+    statusText.style.backgroundImage = `${currentPlayer}`;
+    statusText.textContent = 'turn';
+
     updateScoresDisplay();
     running = true;
 
@@ -56,6 +58,12 @@ function changePlayer(){
 
 }
 
+function updateScoresDisplay() {
+    document.getElementById('point-skull').textContent = scores['X'];
+    document.getElementById('point-tie').textContent = scores['Tie'];
+    document.getElementById('point-crossbones').textContent = scores['O'];
+}
+
 function checkWinner(){
     let roundWon = false;
 
@@ -82,18 +90,12 @@ function checkWinner(){
         running = false;
     } else if(!options.includes("")){
         statusText.textContent = `Tie!`;
-        // increment needed here
+        scores['Tie']++;
+        updateScoresDisplay();
         running = false;
     } else{
         changePlayer();
     }
-
-}
-
-function updateScoresDisplay(){
-   
-
-
 
 }
 
@@ -103,10 +105,12 @@ function restartGame() {
     statusText.textContent = `${currentPlayer}'s turn`;
 
     // Clear the content of each box
-    box.forEach(boxElement => {
+    box.forEach((boxElement, index) => {
         boxElement.textContent = ""; // Clear any text content
         boxElement.style.backgroundImage = ""; // Clear the background image
+        boxElement.setAttribute("boxIndex", index); // Reset the boxIndex attribute
     });
 
     running = true;
 }
+
