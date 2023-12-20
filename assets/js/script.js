@@ -85,3 +85,20 @@ function checkWinner() {
     }
 }
 
+restartBtn.addEventListener("click", resetGame);
+
+
+function resetGame() {
+    options = ["", "", "", "", "", "", "", "", ""];
+    currentPlayer = pX;
+    running = true;
+
+    // Reset the text content and background image of each box
+    box.forEach(box => {
+        box.textContent = "";
+        box.style.backgroundImage = "none"; // Clear the background image
+    });
+
+    // Update status text
+    statusText.textContent = `${currentPlayer}'s turn`;
+}
