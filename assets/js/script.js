@@ -1,6 +1,6 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#statusText');
-const scores = document.querySelector('.scoreArea');
+const scoresElement = document.querySelector('.scoreArea');
 const restartBtn = document.querySelector('#restartBtn');
 const X = document.querySelector('.playerX');
 const O = document.querySelector('.playerO');
@@ -18,6 +18,7 @@ const winConditions = [
 let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = X;
 let running = false;
+let scores = { X: 0, Tie: 0, O: 0 }; // Initialize scores
  
 
 initializeGame();
@@ -85,7 +86,8 @@ function checkWinner(){
 
 }
 
-function updateScore(winner){
+function scores(){
+
 
 
 }
