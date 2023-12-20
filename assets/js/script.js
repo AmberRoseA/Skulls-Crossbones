@@ -27,6 +27,7 @@ initializeGame();
 function initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
     statusText.textContent = `${currentPlayer}'s turn`;
+    updateScoresDisplay();
     running = true;
 
 }
@@ -76,9 +77,12 @@ function checkWinner(){
 
     if(roundWon){
         statusText.textContent = `${currentPlayer} Wins!`;
+        scores[currentPlayer]++; //incredment scores for the current player
+        updateScoresDisplay();
         running = false;
     } else if(!options.includes("")){
         statusText.textContent = `Tie!`;
+        // increment needed here
         running = false;
     } else{
         changePlayer();
@@ -86,7 +90,8 @@ function checkWinner(){
 
 }
 
-function scores(){
+function updateScoresDisplay(){
+   
 
 
 

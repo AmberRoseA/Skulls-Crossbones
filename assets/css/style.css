@@ -41,9 +41,25 @@ body {
     width: 100px;
 
 }
-
+#players {
+    display: none;
+}
 
 /*-----GameArea*/
+.game-area {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+}
+
 .box {
     background-color: #f2c6fd;
     width: 170px;
@@ -66,26 +82,25 @@ body {
 }
 
 
-#board {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto;
-
-}
-
 
 /*---- ScoreArea*/
 .scoreArea {
+    display: flex;
+    flex-direction: column;
     background-color: #f2c6fd;
     width: 10em;
     height: 18em;
     font-size: 2rem;
     margin-left: 5%;
     padding-top: 3%;
-   
-
 }
+
+.game-area>#board,
+.game-area>.scoreArea {
+    margin: 0;
+    /* Reset margin to ensure they are flush against each other */
+}
+
 
 .scores {
     display: flexbox;
