@@ -1,6 +1,6 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#status-text');
-const restartBtn = document.querySelector('#restartBtn');
+const restartGame = document.querySelector('#restartBtn');
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -85,3 +85,4 @@ function checkWinner() {
         running = false;
     }
 }
+
