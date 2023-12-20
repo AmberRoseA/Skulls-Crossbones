@@ -70,10 +70,18 @@ function changePlayer() {
 
 // Function to update scores
 function updateScores() {
-    skullScoreDisplay.textContent = skullScore;
+    // Update Skull score
+    skullScoreDisplay.style.backgroundImage = 'url("assets/images/skull.png")';
+
+    // Update Tie score
     tieScoreDisplay.textContent = tieScore;
+    tieScoreDisplay.style.backgroundImage = 'url("assets/images/tie.png")';
+
+    // Update Bone score
     boneScoreDisplay.textContent = boneScore;
+    boneScoreDisplay.style.backgroundImage = 'url("assets/images/bones.png")';
 }
+
 
 // Function to handle score updates based on game outcome
 function handleScoreUpdate(winner) {
