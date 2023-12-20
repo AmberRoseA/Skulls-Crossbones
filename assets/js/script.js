@@ -12,9 +12,86 @@ const winConditions = [
     [2, 4, 6]
 ];
 
+/**
+ * Player options 
+ */
+let pX = 'X'; // Player X symbol
+let pO = 'O'; // Player O symbol
+
+/**
+ * Initial game rules
+ */
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = ;
+let currentPlayer = pX;
 let running = false;
+
+runGame();
+
+// Functions 
+function runGame() {
+    box.forEach(box => box.addEventListener("click", boxClicked));
+    running = true;
+}
+
+function boxClicked() {
+    const boxIndex = this.getAttribute("boxIndex");
+
+    if (options[boxIndex] !== "" || !running) {
+        return;
+    }
+
+    updateBox(this, boxIndex);
+    checkWinner();
+}
+
+function updateBox(box, index) {
+    options[index] = currentPlayer;
+    box.textContent = currentPlayer;
+
+    // Set the background image based on the current player
+    if (currentPlayer === pX) {
+        box.style.backgroundImage = `url("assets/images/bones.png")`;
+    } else {
+        box.style.backgroundImage = `url("assets/images/skull.png")`;
+    }
+
+    changePlayer();
+}
+
+function changePlayer() {
+    currentPlayer = (currentPlayer === pX) ? pO : pX;
+    statusText.textContent = `${currentPlayer}'s turn`;
+}
+
+
+function checkWinner() {
+    let roundWon = false;
+
+    for (let i = 0; i < winConditions.length; i++) {
+        const condition = winConditions[i];
+        const boxA = options[condition[0]];
+        const boxB = options[condition[1]];
+        const boxC = options[condition[2]];
+
+        if (boxA == "" || boxB == "" || boxC == "") {
+            continue;
+        }
+        if (boxA == boxB && boxB == boxC) {
+            roundWon = true;
+            break;
+        }
+    }
+
+    if (roundWon) {
+        statusText.textContent = `${currentPlayer} wins!`;
+        running = false;
+    } else if (!options.includes("")) {
+        statusText.textContent = `Tie!`;
+        running = false;
+    } else {
+        changePlayer();
+    }
+
 /**
  * Gets the current tally of Games one by Skull from the DOM and increments it by 1
  */
@@ -37,10 +114,3 @@ function incrementBoneScore() {
 /**
  * Gets the current tally of Tied Game from the DOM and increments it by 1
  */
-function incrementTieScore() {
-
-    let oldScore = parseInt(document.getElementById("tie-score").innerText);
-    document.getElementById("tie-score").innerText = ++oldScore;
-
-}
-
