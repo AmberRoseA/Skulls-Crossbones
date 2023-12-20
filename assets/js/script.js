@@ -27,6 +27,14 @@ funtion initializeGame(){
 }
 
 function boxClicked(){
+    const dataCell = this.getAttribute("dataCell");
+
+    if(options[dataCell] != "" || !running){
+        return;
+    }
+
+    updateBox(this, dataCell);
+    checkWinner();
 
 }
 
