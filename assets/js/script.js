@@ -1,6 +1,8 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#statusText');
-const restartBtn = document.querySelector('#restartBtn')
+const restartBtn = document.querySelector('#restartBtn');
+const X = document.querySelector('.playerX');
+const O = document.querySelector('.playerO');
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -13,7 +15,7 @@ const winConditions = [
 ];
 
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = "X";
+let currentPlayer = X;
 let running = false;
  
 
@@ -22,7 +24,7 @@ initializeGame();
 // Functions 
 function initializeGame(){
     box.forEach(box => box.addEventListener("click", boxClicked));
-    restartBtn.addEventListener("clicked", restartGame);
+    restartBtn.addEventListener("click", restartGame);
     statusText.textContent = `${currentPlayer}'s turn`;
     running = true;
 
@@ -40,15 +42,14 @@ function boxClicked(){
 
 }
 
-function updateBox(box, index){
+function updateBox(box, index) {
     options[index] = currentPlayer;
-    box.textContent = currentPlayer;
-    
-
+    box.style.backgroundImage = `url(${currentPlayer.src})`;
 }
 
+
 function changePlayer(){
-    currentPlayer = (currentPlayer == "X") ? "O" : "X";
+    currentPlayer = (currentPlayer == X) ? O : X;
     statusText.textContent = `${currentPlayer}'s turn`;
 
 }
@@ -66,7 +67,7 @@ function checkWinner(){
             continue;
         }
 
-        if(boxA == boxB && boxb == boxC){
+        if(boxA == boxB && boxB == boxC){
             roundWon = true;
             break;
         }
@@ -89,7 +90,7 @@ function updateScore(){
 }
 
 function restartGame(){
-    currentPlayer = "X";
+    currentPlayer = X;
     options = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s turn`;
     box.forEach(box => box.textContent = "");

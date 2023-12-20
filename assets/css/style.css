@@ -33,12 +33,12 @@ body {
 }
 /*---Player icons*/
 .playerX {
-    background-image: url('../images/bones.png');
+    width: 100px;
 
 }
 
 .playerO {
-    background-image: url('../images/skull.png');
+    width: 100px;
 
 }
 
@@ -53,7 +53,16 @@ body {
     line-height: 75px;
     font-size: 50px;
     cursor: pointer;
+    background-size: cover;
     
+}
+
+.box::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
 
 
