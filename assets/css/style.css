@@ -31,6 +31,17 @@ body {
     
     
 }
+/*---Player icons*/
+.playerX {
+    background-image: url('../images/bones.png');
+
+}
+
+.playerO {
+    background-image: url('../images/skull.png');
+
+}
+
 
 /*-----GameArea*/
 .box {
