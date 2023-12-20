@@ -1,6 +1,9 @@
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#status-text');
 const restartGame = document.querySelector('#restartBtn');
+const skullScoreDisplay = document.querySelector('#skull-score');
+const tieScoreDisplay = document.querySelector('#tie-score');
+const boneScoreDisplay = document.querySelector('#bone-score');
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -25,6 +28,13 @@ let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = pX;
 let running = false;
 
+/**
+ * Score let rules
+ */
+let skullScore = 0;
+let tieScore = 0;
+let boneScore = 0;
+
 runGame();
 
 // Functions 
@@ -40,7 +50,7 @@ function boxClicked() {
         return;
     }
 
-    // Set the background image based on the current player
+    // Set the background image based on the current player and their graphic
     this.style.backgroundImage = (currentPlayer === pX) ? 'url("assets/images/bones.png")' : 'url("assets/images/skull.png")';
 
     updateBox(this, boxIndex);
@@ -58,8 +68,28 @@ function changePlayer() {
     statusText.textContent = `${currentPlayer}'s turn`;
 }
 
+// Function to update scores
+function updateScores() {
+    skullScoreDisplay.textContent = skullScore;
+    tieScoreDisplay.textContent = tieScore;
+    boneScoreDisplay.textContent = boneScore;
+}
+
+// Function to handle score updates based on game outcome
+function handleScoreUpdate(winner) {
+    if (winner === pX) {
+        boneScore++;
+    } else if (winner === pO) {
+        skullScore++;
+    } else {
+        tieScore++;
+    }
+    updateScores();
+}
+
 function checkWinner() {
     let roundWon = false;
+    let winner = null;
 
     for (let i = 0; i < winConditions.length; i++) {
         const condition = winConditions[i];
@@ -72,19 +102,25 @@ function checkWinner() {
         }
         if (boxA == boxB && boxB == boxC) {
             roundWon = true;
+            winner = boxA; // Set the winner here
             break;
         }
     }
 
     if (roundWon) {
-        statusText.textContent = `${currentPlayer} wins!`;
+        statusText.textContent = `${winner} wins!`;
+        handleScoreUpdate(winner);
         running = false;
     } else if (!options.includes("")) {
         statusText.textContent = `Tie!`;
+        handleScoreUpdate("tie");
         running = false;
     }
 }
 
+/**
+ * Restart button--- Clear board 
+ */
 restartBtn.addEventListener("click", resetGame);
 
 
