@@ -32,15 +32,6 @@ body {
     
 }
 /*---Player icons*/
-.playerX {
-    width: 100px;
-
-}
-
-.playerO {
-    width: 100px;
-
-}
 #players {
     display: none;
 }
@@ -109,17 +100,6 @@ body {
 }
 
 /*-----Score icons*/
-.score-skull {
-    height: 6.5rem;
-}
-
-.score-tie {
-    height : 9.5rem;
-}
-
-.score-bones { 
-    height: 6.5rem;
-}
 
 /*Refresh button*/
 #restartBtn {
