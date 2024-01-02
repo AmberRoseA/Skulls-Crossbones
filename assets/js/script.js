@@ -65,7 +65,7 @@ function updateBox(box, index) {
 
 function changePlayer() {
     currentPlayer = (currentPlayer === pX) ? pO : pX;
-    statusText.textContent = `${currentPlayer}'s turn`;
+    statusText.textContent = `${currentPlayer}'s Turn`;
 }
 
 // Function to update scores
@@ -109,7 +109,7 @@ function checkWinner() {
     }
 
     if (roundWon) {
-        statusText.textContent = `${winner} wins!`;
+        statusText.textContent = `${winner} WINS!`;
         handleScoreUpdate(winner);
         running = false;
     } else if (!options.includes("")) {
@@ -137,5 +137,5 @@ function resetGame() {
     });
 
     // Update status text
-    statusText.textContent = `${currentPlayer}'s turn`;
+    statusText.textContent = `${currentPlayer}'s Turn`;
 }
