@@ -107,6 +107,7 @@ body {
 
 .score-area h2 {
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 
