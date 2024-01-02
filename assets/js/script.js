@@ -18,8 +18,8 @@ const winConditions = [
 /**
  * Player options 
  */
-let pX = 'X'; // Player X symbol
-let pO = 'O'; // Player O symbol
+let pX = 'Crossbone'; // Player X symbol
+let pO = 'Skull'; // Player O symbol
 
 /**
  * Initial game rules
