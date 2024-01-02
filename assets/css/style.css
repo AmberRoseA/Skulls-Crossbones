@@ -16,7 +16,7 @@ body {
 /*-----Heading*/
 .heading {
     position: relative;
-    color: #9f4ab4;
+    color: #37013c;
     background-color: #fffefe;
     font-size: 38px;
     text-transform: uppercase;
@@ -103,6 +103,10 @@ body {
     font-size: 2rem;
     margin-left: 5%;
     padding-top: 3%;
+}
+
+.score-area h2 {
+    text-transform: uppercase;
 }
 
 
