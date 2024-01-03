@@ -9,17 +9,17 @@ body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #9f4ab4;
+    background-color: rgba(159, 74, 180, 1);
     font-family: "Acme", sans-serif;
-    color: #ffff;
+    color: rgba(255, 255, 255, 1);
     text-align: center;
 }
 
 /*-----Heading*/
 .heading {
     position: relative;
-    color: #37013c;
-    background-color: #fffefe;
+    color: rgba(55, 1, 60, 1);
+    background-color: rgba(255, 254, 254, 1);
     font-size: 38px;
     text-transform: uppercase;
     padding: 8px 0 8px 0;
@@ -52,7 +52,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    background-color: #f2c6fd;
+    background-color: rgba(242, 198, 253, 1);
     padding: 10px;
 }
 
@@ -81,8 +81,8 @@ body {
 
 /*Turn Status Text*/
 #status-text {
-    background-color: #37013c;
-    color: #fffefe;
+    background-color: rgba(55, 1, 60, 1);
+    color: rgba(255, 254, 254, 1);
     font-size: 40px;
     position: relative;
    
@@ -93,7 +93,7 @@ body {
 #scoreboard-container {
     display: flex;
     flex-direction: column;
-    background-color: #f2c6fd;
+    background-color: rgba(242, 198, 253, 1);
     width: fit-content;
     height: 100%;
     border: 2px solid;
@@ -102,7 +102,7 @@ body {
 
 
 .score-area h2 {
-    color: #37013c;
+    color: rgba(55, 1, 60, 1);
     font-size: xx-large;
     padding: 1rem;
     text-transform: uppercase;
@@ -111,7 +111,7 @@ body {
 }
 
 .scores {
-    color: #37013c;
+    color: rgba(55, 1, 60, 1);
     font-size: x-large;
     text-transform: uppercase;
     padding: 1rem 3rem 0.1rem 1rem;
@@ -151,8 +151,8 @@ body {
 
 /*Refresh button*/
 #restartBtn {
-    background-color: #fffefe;
-    color: #9f4ab4;
+    background-color: rgba(255, 254, 254, 1);
+    color: rgba(159, 74, 180, 1);
     font-family: "Acme", sans-serif;
     font-size: 38px;
     text-align: center;
@@ -162,8 +162,8 @@ body {
 }
 
 #restartBtn:active {
-    background-color: #9f4ab4;
-    color: #fffefe;
+    background-color: rgba(159, 74, 180, 1);
+    color: rgba(255, 254, 254, 1);
     text-align: center;
     width: 100%;
     height: 4rem;
@@ -177,7 +177,7 @@ body {
     height: fit-content;
     margin-top: auto;
     padding: 2% 0;
-    background-color: #9f4ab4;
+    background-color: rgba(159, 74, 180, 1);
 
 }
 
