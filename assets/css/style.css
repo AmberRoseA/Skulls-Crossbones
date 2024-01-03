@@ -168,4 +168,11 @@ body {
     text-transform: uppercase;
 
 }
+/*Footer*/
+#footer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2em;
+    background-color: #37013c;
 
+}
