@@ -99,10 +99,10 @@ body {
     flex-direction: column;
     background-color: #f2c6fd;
     color: #37013c;
+    font-size: 2rem;
     width: 10em;
     height: 16em;
     border: 2px solid;
-    font-size: 2rem;
     margin-left: 5%;
     padding-top: 3%;
 }
@@ -110,6 +110,7 @@ body {
 .score-area h2 {
     text-transform: uppercase;
     text-decoration: underline;
+    
 }
 
 
@@ -176,5 +177,31 @@ body {
     height: fit-content;
     margin-top: 2em;
     background-color: #37013c;
+
+}
+
+/*Responsive Screen size 760*/
+@media (max-width: 760px) {
+    .game-area {
+        flex-direction: column;
+    }
+
+    .score-area {
+        width: fit-content;
+        height: fit-content;
+        font-size: 2rem;
+        padding-right: 2px;
+    }
+    .score-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+}
+
+/*Responsive Screen size 530*/
+@media (max-width: 530px) {
 
 }
