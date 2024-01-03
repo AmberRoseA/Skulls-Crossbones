@@ -35,20 +35,20 @@ body {
     
 }
 /*---Player icons*/
-#players {
+/*#players {
     display: none;
 }
 .playerO {
-    width: 50px;   /* isss tbese lines valid still?REVIST*/
+    width: 50px;   /* isss tbese lines valid still?REVIST
 }
 .playerX {
     width: 50px;
-}
+}*/
 
 /*-----GameArea*/
 .game-area {
     display: flex;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
@@ -84,10 +84,11 @@ body {
 
 /*Turn Status Text*/
 #status-text {
+    background-color: #37013c;
     color: #fffefe;
     font-size: 40px;
-
-
+    position: relative;
+   
 }
 
 
