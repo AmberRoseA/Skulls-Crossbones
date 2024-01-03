@@ -3,7 +3,7 @@
  */
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#status-text');
-const restartGame = document.querySelector('#restartBtn');
+const restetGame = document.querySelector('#restartBtn');
 const skullScoreDisplay = document.querySelector('#skull-score');
 const tieScoreDisplay = document.querySelector('#tie-score');
 const boneScoreDisplay = document.querySelector('#bone-score');
