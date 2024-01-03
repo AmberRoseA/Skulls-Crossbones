@@ -27,7 +27,8 @@ body {
 }
 
 .logo {
-    height: 15em;
+    width: 90%;
+    height: auto;
     position: relative;
     margin-top: 0;
     
