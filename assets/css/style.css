@@ -176,7 +176,19 @@ body {
     width: 100%;
     height: fit-content;
     margin-top: auto;
-    background-color: #37013c;
+    padding: 2% 0;
+    background-color: #9f4ab4;
+
+}
+
+.footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        letter-spacing: 2px;
+        margin: 0 10px;
 
 }
 
