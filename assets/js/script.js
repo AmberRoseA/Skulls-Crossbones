@@ -1,3 +1,6 @@
+/**
+ * Basic Stucture and const of game layout
+ */
 const box = document.querySelectorAll(".box");
 const statusText = document.querySelector('#status-text');
 const restartGame = document.querySelector('#restartBtn');
