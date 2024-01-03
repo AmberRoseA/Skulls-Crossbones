@@ -89,7 +89,6 @@ body {
 }
 
 
-
 /*---- ScoreArea*/
 #scoreboard-container {
     display: flex;
@@ -204,7 +203,7 @@ body {
 
 /*Responsive Screen size 530*/
 @media (max-width: 530px) {
-    /*Reduce size od headline*/
+   /*Reduce size od headline*/
     .heading {
         font-size: x-large;
     }
