@@ -60,11 +60,13 @@ body {
 #board {
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 100%;
+    grid-gap: 10px;
+    background-color: #f2c6fd;
+    padding: 10px;
 }
 
 .box {
-    background-color: #f2c6fd;
+
     width: 170px;
     height: 170px;
     border: 2px solid;
@@ -76,7 +78,6 @@ body {
     background-repeat: no-repeat;
     /* Change this line */
 }
-
 .box::before {
     content: '';
     display: block;
@@ -198,7 +199,7 @@ body {
     }
 
     .score-area {
-        width: fit-content;
+        width: 100%;
         height: fit-content;
         font-size: 2rem;
         padding-right: 2px;
@@ -218,9 +219,19 @@ body {
     .heading {
         font-size: x-large;
     }
-    
-    #board {
-        width: auto;
+
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .score-area h2 {
+        padding: none;
+    }
+   
+    .scores {
+        font-size: small;
+        padding-left: 5%;
     }
 
 }
