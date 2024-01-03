@@ -38,7 +38,7 @@ body {
     display: none;
 }
 .playerO {
-    width: 50px;   /* isss tbese lines valid still?*/
+    width: 50px;   /* isss tbese lines valid still?REVIST*/
 }
 .playerX {
     width: 50px;
@@ -118,7 +118,17 @@ body {
 }
 
 /*-----Score icons*/
+.scoreskull-graphic {
+    width: 3em;
 
+}
+.scoretie-graphic {
+    width: 1.5em;
+}
+
+.scorebones-graphic {
+    width: 3em;
+}
 
 /*Refresh button*/
 #restartBtn {
