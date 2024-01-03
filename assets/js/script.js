@@ -47,7 +47,7 @@ function runGame() {
 }
 
 function boxClicked() {
-    const boxIndex = this.getAttribute("boxIndex");
+    const boxIndex = this.getAttribute("data-boxindex");
 
     if (options[boxIndex] !== "" || !running) {
         return;
