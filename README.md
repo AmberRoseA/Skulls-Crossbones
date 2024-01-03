@@ -35,6 +35,7 @@
 * Code institute - Love Maths Walk through project - Initial starting point and guide.
 * https://www.youtube.com/watch?v=AnmwHjpEhtA - Ideas of how code for the game goes
 * https://www.youtube.com/watch?v=kRQEkTHIEyU - More Advance ideas of Game code Ideas
+* https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-columns - For helping me understand why my colums didnt work
 
 
 ## Media
