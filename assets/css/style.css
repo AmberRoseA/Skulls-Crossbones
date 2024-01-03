@@ -107,7 +107,7 @@ body {
 
 .score-area h2 {
     color: #37013c;
-    font-size: 3em;
+    font-size: xx-large;
     padding: 1rem;
     text-transform: uppercase;
     text-decoration: underline;
@@ -116,7 +116,7 @@ body {
 
 .scores {
     color: #37013c;
-    font-size: 2em;
+    font-size: x-large;
     text-transform: uppercase;
     padding: 1rem 3rem 0.1rem 1rem;
 }
