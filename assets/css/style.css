@@ -7,7 +7,7 @@
 
 body {
     background-image: url("../images/background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
     background-color: rgba(159, 74, 180, 1);
     font-family: "Acme", sans-serif;
@@ -44,7 +44,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
-    background-color:  rgba(55, 1, 60, 0.8);
+    background-color: rgb(70 5 76 / 75%);
     
 }
 
@@ -52,15 +52,18 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    background-color: rgba(242, 198, 253, 1);
+    background-color: rgb(242 216 248);
     padding: 10px;
+    border: 5px solid;
+    border-color: #be4688;
 }
 
 .box {
 
     width: 170px;
     height: 170px;
-    border: 2px solid;
+    border: 5px solid;
+    border-color: #16658b;
     box-shadow: 0 0 0 2px;
     line-height: 75px;
     font-size: 50px;
@@ -93,10 +96,11 @@ body {
 #scoreboard-container {
     display: flex;
     flex-direction: column;
-    background-color: rgba(242, 198, 253, 1);
+    background-color: rgb(242 216 248);
     width: fit-content;
     height: 100%;
-    border: 2px solid;
+    border: 5px solid;
+    border-color: #be4688;
 }
 
 
@@ -104,9 +108,10 @@ body {
 .score-area h2 {
     color: rgba(55, 1, 60, 1);
     font-size: xx-large;
-    padding: 1rem;
+    padding-top: 1rem;
     text-transform: uppercase;
     text-decoration: underline;
+    word-spacing: 1em;
     
 }
 
@@ -117,12 +122,23 @@ body {
     padding: 1rem 3rem 0.1rem 1rem;
 }
 
+.score-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: baseline;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
 
 .score-options p {
     margin: 0;
     /* Remove default margin to ensure better alignment */
     margin-bottom: 20px;
         /* Add space between each p element */
+    font-family: "Acme", sans-serif;
+    color: #16658b;
+    font-weight: bold;
 }
 
 .score-options img {
@@ -130,21 +146,22 @@ body {
     /* Align images vertically in the middle with the text */
     margin-right: 10px;
     /* Add some right margin for spacing between image and text */
+    display: block;
 }
 
 /*-----Score icons*/
 .scoreskull-graphic {
-    width: 3em;
+    width: 4em;
     
 
 }
 .scoretie-graphic {
-    width: 1.5em;
+    width: 1.8em;
   
 }
 
 .scorebones-graphic {
-    width: 3em;
+    width: 4em;
 
     
 }
