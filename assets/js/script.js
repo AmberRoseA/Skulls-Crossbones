@@ -1,12 +1,12 @@
 /**
  * Basic Stucture and const of game layout
  */
-const box = document.querySelectorAll(".box");
-const statusText = document.querySelector('#status-text');
-const restartBtn = document.querySelector('#restartBtn');
-const skullScoreDisplay = document.querySelector('#skull-score');
-const tieScoreDisplay = document.querySelector('#tie-score');
-const boneScoreDisplay = document.querySelector('#bone-score');
+let box = document.querySelectorAll(".box");
+let statusText = document.querySelector("#status-text");
+let restartBtn = document.querySelector("#restartBtn");
+let skullScoreDisplay = document.querySelector("#skull-score");
+let tieScoreDisplay = document.querySelector("#tie-score");
+let boneScoreDisplay = document.querySelector("#bone-score");
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -20,15 +20,16 @@ const winConditions = [
 
 /**
  * Player options 
+ * playerX- crossbones and playerO- for skulls
  */
-let pX = 'Crossbone'; // Player X symbol
-let pO = 'Skull'; // Player O symbol
+let playerX = "Crossbone";
+let playerO = "Skull";
 
 /**
  * Initial game rules
  */
 let options = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = pX;
+let currentPlayer = playerX;
 let running = false;
 
 /**
@@ -53,8 +54,10 @@ function boxClicked() {
         return;
     }
 
-    // Set the background image based on the current player and their graphic
-    this.style.backgroundImage = (currentPlayer === pX) ? 'url("assets/images/bones.png")' : 'url("assets/images/skull.png")';
+    /**
+     * Set the background image based on the current player and their graphic
+     */ 
+    this.style.backgroundImage = (currentPlayer === playerX) ? 'url("assets/images/bones.png")' : 'url("assets/images/skull.png")';
 
     updateBox(this, boxIndex);
     checkWinner();
@@ -67,11 +70,13 @@ function updateBox(box, index) {
 }
 
 function changePlayer() {
-    currentPlayer = (currentPlayer === pX) ? pO : pX;
+    currentPlayer = (currentPlayer === playerX) ? playerO : playerX;
     statusText.textContent = `${currentPlayer}'s Turn`;
 }
 
-// Function to update scores
+/**
+ *  Function to update scores
+ */
 function updateScores() {
     skullScoreDisplay.textContent = skullScore;
     tieScoreDisplay.textContent = tieScore;
@@ -79,11 +84,13 @@ function updateScores() {
 }
 
 
-// Function to handle score updates based on game outcome
+/**
+ * Function to handle score updates based on game outcome 
+ */
 function handleScoreUpdate(winner) {
-    if (winner === pX) {
+    if (winner === playerX) {
         boneScore++;
-    } else if (winner === pO) {
+    } else if (winner === playerO) {
         skullScore++;
     } else {
         tieScore++;
@@ -106,7 +113,7 @@ function checkWinner() {
         }
         if (boxA == boxB && boxB == boxC) {
             roundWon = true;
-            winner = boxA; // Set the winner here
+            winner = boxA; /**Set the winner here*/
             break;
         }
     }
@@ -127,18 +134,35 @@ function checkWinner() {
  */
 restartBtn.addEventListener("click", resetGame);
 
+/**
+ * Wont let player start until page has fully loaded
+ */
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+});
+
+
 
 function resetGame() {
-    options = ["", "", "", "", "", "", "", "", ""];
-    currentPlayer = pX;
-    running = true;
+    /**Confirmation user wants game reset*/
+    const userConfirmed = confirm("Would you like to Reset Game?");
 
-    // Reset the text content and background image of each box
-    box.forEach(box => {
-        box.textContent = "";
-        box.style.backgroundImage = "none"; // Clear the background image
-    });
+    if (userConfirmed) {
+        options = ["", "", "", "", "", "", "", "", ""];
+        currentPlayer = playerX;
+        running = true;
 
-    // Update status text
-    statusText.textContent = `${currentPlayer}'s Turn`;
+    /**
+     *  Reset the text content and background image of each box
+     */
+        box.forEach(box => {
+            box.textContent = "";
+            box.style.backgroundImage = "none"; /** Clear the background image */
+        });
+
+    /**
+     * Update status text
+     */
+        statusText.textContent = `${currentPlayer}'s Turn`;
+    }    
 }
