@@ -31,6 +31,7 @@ body {
 
 .logo {
     width: 60%;
+    min-width: 40%;
     height: auto;
     position: relative;
     margin-top: 0;
@@ -101,28 +102,31 @@ body {
     background-color: rgb(242 216 248);
     width: auto;
     height: 100%;
+    padding: 10px;
     border: 5px solid;
-    border-color: #be4688;
+    border-color: #16658b;
 }
 
 
 .score-area {
     width: fit-content;
+    border: 5px solid;
+    border-color: #be4688;
 }
 
 
 .score-area h2 {
-    color: rgba(55, 1, 60, 1);
-    font-size: xx-large;
+    color: rgb(169 1 32);
+    font-size: xxx-large;
     padding-top: 1rem;
     text-transform: uppercase;
     text-decoration: underline;
-    word-spacing: 1em;
+    word-spacing: 18px;
     
 }
 
 .scores {
-    color: rgba(55, 1, 60, 1);
+    color: rgb(169 1 32);
     font-size: xx-large;
     text-transform: uppercase;
     padding: 1rem 3rem 0.1rem 1rem;
@@ -143,7 +147,7 @@ body {
     margin-bottom: 20px;
         /* Add space between each p element */
     font-family: "Acme", sans-serif;
-    color: #16658b;
+    color: rgb(169 1 32);
     font-weight: bold;
 }
 
@@ -159,8 +163,8 @@ body {
 .scoreskull-graphic {
     width: 4em;
     
-
 }
+
 .scoretie-graphic {
     width: 1.8em;
   
@@ -174,10 +178,20 @@ body {
 
 /*Score points */
 
-#bone-score,
-#tie-score,
+#bone-score {
+    color: #16658b;
+    font-size: xxx-large;
+
+}
+
+#tie-score {
+    color:rgba(55, 1, 60, 1);
+    font-size: xxx-large;
+
+}
+
 #skull-score {
-    color: rgba(188, 186, 4, 1);
+    color: #be4688;
     font-size: xxx-large;
     
 }
@@ -186,8 +200,8 @@ body {
 
 /*Refresh button*/
 #restartBtn {
-    background-color: rgba(255, 254, 254, 1);
-    color: rgba(159, 74, 180, 1);
+    background-color: #be4688;
+    color: rgba(255, 254, 254, 1);
     font-family: "Acme", sans-serif;
     font-size: 38px;
     text-align: center;
@@ -197,8 +211,7 @@ body {
 }
 
 #restartBtn:active {
-    background-color: rgb(242 216 248);
-    color: #16658b;
+    background-color: rgb(169 1 32);
     text-align: center;
     width: 100%;
     height: 4rem;
@@ -209,10 +222,10 @@ body {
 #footer {
     position: relative;
     width: 100%;
-    height: fit-content;
+    height: 10%;
     margin-top: auto;
     padding: 2% 0;
-    background-color: #be4688;
+    background-color: rgba(255, 254, 254, 1);
 
 }
 
@@ -222,13 +235,15 @@ body {
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
+        color: rgba(55, 1, 60, 1);
         letter-spacing: 2px;
+        font-size: x-large;
         margin: 0 10px;
 
 }
 
-/*Responsive Screen size 760*/
-@media (max-width: 760px) {
+/*Responsive Screen size 1160*/
+@media (max-width: 1160px) {
     .game-area {
         flex-direction: column;
     }
