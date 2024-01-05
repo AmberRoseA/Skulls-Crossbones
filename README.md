@@ -1,9 +1,15 @@
 # Skulls & Crossbones
 
 ## Project Overview
+*Greetings and welcome to the README for 'Skulls & Crossbones' – a thrilling twist on the timeless classic, Noughts & Crosses. In this captivating web game, two players engage in a strategic battle, taking turns to strategically place their character pieces on a gridded table. The ultimate goal? Achieve a triumphant sequence of three in a row to emerge as the undisputed champion. Dive into the world of 'Skulls & Crossbones' for an exhilarating gaming experience that puts a fresh spin on a beloved classic.
+
+![responsive_screen](readme_files/responsivescreen.png)
 
 ## Features
 ### Key Existing features
+
+
+
 ### Future Features
 
 ## UX/UI SECTION
