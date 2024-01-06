@@ -111,8 +111,38 @@ Additionally, the testing covered the Reset button functionality, confirming tha
 * If confirmed, the grid/game board clears of all graphics.
 * If canceled, the game continues from where it was left off.
 
-  
-* tests on differant browsers 
+### Browser Compatibility:
+Extensive testing of this game and its features was conducted on both Google Chrome and Microsoft Edge Explorer.
+
+### Device Testing:
+This web document has been tested on the following device screens using google chromes dev tools.
+
+#### Desktop
+
+* All standard laptop and desktop screen.
+
+#### Mobile Screens
+
+* Iphone 14 pro max
+* Iphone 12 pro
+* Iphone SE
+* Samsung Galaxy 3
+* Nokia lumai 520
+* Pixel 4
+* Blackberry Z30
+* Galaxy s5
+* Facebook on Android
+
+#### Ipad Screens
+
+* Ipad pro
+* Ipad
+* Ipad Air
+* Ipad mini
+* Galaxy Tab S4
+* Kindle HDX
+
+### Lighthouse 
 
 * lighthouse testing (images)
 
