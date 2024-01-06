@@ -105,6 +105,36 @@ The ultimate web page adheres closely to several elements from the original desi
 
 ## Deployment
 
+### Skulls & Crossbones has been deployed to GitHub Pages
+GitHub Deployment Steps -
+* Open the GitHub repository.
+* Navigate to "Settings" located at the top right of the screen.
+* Select the "Pages" tab from the left sidebar under 'Code and automation' (it's the eighth option down).
+* In the 'Build and deployment' section, locate the 'Branch' subsection.
+* Choose the source branch (either "main" or "master") from the drop-down menu next to "none"/"select branch."
+* Click on "Save" to apply the changes.
+* Be patient as the system processes the request. This may take some time.
+* Once the page updates, you will find a link for the deployed page within the GitHub Pages section.
+* Confirm the deployment by checking for the message: "Your site is live at <https://amberrosea.github.io/SkullsandCrossbones/>."
+
+### Skulls & Crossbones has been deployed with GIT on Codeanywhere
+Codeanywhere deployment Steps -
+
+* Wait for the workspace to fully load.
+* If the terminal is not visible at the bottom of the screen, select 'Terminal' at the top left of the page.
+* Click on the first option, 'New Terminal.'
+* In the Terminal input field, enter 'python3 -m http.server.'
+* A pop-up window should appear at the bottom right of the screen, providing the option to 'preview' or 'open in the browser.'
+* Choose 'open in the browser,' and a new tab will display the launched website.
+* If the pop-up window doesn't appear, click on the port in the bottom right corner.
+* This will open a window where you can click 'open in the browser.'
+* For version control:
+* Execute 'git add .' followed by 'enter.'
+* Use 'git commit -m "notes on changes" enter' to record your changes. These commands are particularly useful when adding content or making modifications.
+* Finally, 'git push enter' to save your changes onto the server.
+
+
+
 ## Technologies
 * Adobe (Capture, Fresco and Photoshop) - Platforms used to create graphics and Wireframes
 * Github
