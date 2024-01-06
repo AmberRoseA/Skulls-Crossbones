@@ -194,6 +194,11 @@ Codeanywhere deployment Steps -
 * Github
 * Codeanywhere
 * HtML, CSS, JavaScript
+* <https://validator.w3.org/> https://jigsaw.w3.org/css-validator/ https://jshint.com/ - Sites used to validate code.
+* https://chat.openai.com/ - Explaining elements of code when it was not clicking and assisting me in wording text in readme
+* google - For fonts and also as a search engine to find solutions to problems.
+* <https://favicon.io/favicon-converter/#google_vignette> - or generating FAVICON
+
 
 ## Credits
 * https://playtictactoe.org/#google_vignette - Insperation/ Research of game
