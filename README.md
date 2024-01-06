@@ -37,7 +37,8 @@ Directly beneath the game logo, the header or tagline of the game reads: "Rock t
  Central to the entire concept is the game interface itself. It features a conventional Noughts and Crosses grid table, adorned with color styles harmonizing with the overall webpage design while maintaining clarity in each boxed section. When a player clicks on a designated box, a graphical representation of either a skull or crossbone, contingent on the active turn, will be showcased. Once a winner is determined, users will no longer have the option to select additional boxes, and the pertinent information will seamlessly transition to the scoreboards section.
 
 ![game_table](readme_files/gameareadesktop.png)
-
+![game_table_ipad](readme_files/gameareipad.png)
+![game_table_mobile](readme_files/gameareamobile.png)
 ##### Scoreboard:
   Scoreboard – This area is to keeps score on how many games each player has won or how many tied games there have been. Colour styles matched with the grid/game table.
   Each player is labelled with both their graphic and text, there is also a graphic for the tied section.
@@ -187,8 +188,6 @@ Codeanywhere deployment Steps -
 * Use 'git commit -m "notes on changes" enter' to record your changes. These commands are particularly useful when adding content or making modifications.
 * Finally, 'git push enter' to save your changes onto the server.
 
-
-
 ## Technologies
 * Adobe (Capture, Fresco and Photoshop) - Platforms used to create graphics and Wireframes
 * Github
@@ -196,9 +195,7 @@ Codeanywhere deployment Steps -
 * HtML, CSS, JavaScript
 * <https://validator.w3.org/> https://jigsaw.w3.org/css-validator/ https://jshint.com/ - Sites used to validate code.
 * https://chat.openai.com/ - Explaining elements of code when it was not clicking and assisting me in wording text in readme
-* google - For fonts and also as a search engine to find solutions to problems.
-* <https://favicon.io/favicon-converter/#google_vignette> - or generating FAVICON
-
+* google - search engine.
 
 ## Credits 
 ### Contents
