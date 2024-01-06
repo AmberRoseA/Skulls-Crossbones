@@ -84,10 +84,14 @@ This additional step is designed to enhance user experience, serving as a safegu
 This enhancement is designed to elevate the user experience, making the act of winning more memorable and enjoyable.
 
 ### Wireframes
+Presented below are the initial design concepts for the game, tailored for both desktop and mobile devices.
 
+The ultimate web page adheres closely to several elements from the original design, including the background, logos, graphics, and color themes. However, the current aesthetic has undergone significant refinement, elevating it beyond the initial concept. Crucial elements have been expanded upon, and a more extensive use of colors has been integrated to enhance visual appeal and avoid a monotonous appearance.
 
-#### Desktop view 
+#### Desktop view:
+![desktop_view_wireframe](readme_files/desktopdesign.png)
 #### mobile view
+![mobile_view_wireframes](readme_files/mobiledesign.png)
 
 ## Testing
 * tests on differant browsers 
