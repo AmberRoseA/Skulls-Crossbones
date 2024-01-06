@@ -200,17 +200,28 @@ Codeanywhere deployment Steps -
 * <https://favicon.io/favicon-converter/#google_vignette> - or generating FAVICON
 
 
-## Credits
-* https://playtictactoe.org/#google_vignette - Insperation/ Research of game
-* Favicon.io - Genirating Favicon <https://favicon.io/favicon-converter/#google_vignette>
-* Code institute - Love Maths Walk through project - Initial starting point and guide.
-* https://www.youtube.com/watch?v=AnmwHjpEhtA - Ideas of how code for the game goes
-* https://www.youtube.com/watch?v=kRQEkTHIEyU - More Advance ideas of Game code Ideas
-* https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-columns - For helping me understand why my colums didnt work
+## Credits 
+### Contents
+* Code institute/ Love Maths Walk through project -- <https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/04-multiplication-and-subtraction-questions/02-the-subtraction-game/assets/js/script.js> -- Initial starting point and guide.
+* Code institute/ Love Maths README.md -- <https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md> -- Guide for content and layout of README file.
+* Code institute/ Love Maths css -- <https://raw.githubusercontent.com/Code-Institute-Solutions/JS-Essentials-Project/master/03-Getting%20Stylish/style_starter.css> -- Referance/ guide for css styles to use.
+* Code institute/ Love Maths html -- https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/02-adding-some-javascript/01-adding-structure/index.html -- Referance/ guide.
+* mdn web docs/ creating and triggering events -- <https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events> -- Gathering more information on event listeners.
+* mdn web docs/ Document: DOMContentLoaded event -- https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event -- Make sure page is fully loaded before game can be played.
+* W3Schools tryit Editor/ The grid-template-columns property -- <https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-columns> -- For further information on creating grid columns.
+* W3Schools/ CSS grid-template-columns -- <https://www.w3schools.com/cssref/pr_grid-template-columns.php> -- For further information on creating grid columns.
+* W3Schools tryiteditor/ The window object -- <https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3> -- Information for confimation popup for reset
+* W3Schools/ Window Confirm -- https://www.w3schools.com/jsref/met_win_confirm.asp -- Confirmation on confirm pop up for reset button.
+* Study tonight/ How to Make a Tic Tac Toe Game in JavaScript [2023] -- https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript#google_vignette -- Inital reseach on game and ideas.
+* https://www.youtube.com/watch?v=AnmwHjpEhtA -- TicTacToe tutorial, for annital ideas and example of the fundementals needed for the game.
+* https://www.youtube.com/watch?v=kRQEkTHIEyU -- Tic tac toe tutorial, for ideas and example for js code, implementing graphics elements.
+* https://codepen.io/captain-mad/pen/ggYozp -- ideas for js code for the tic tac toe game (vs computer).
+* <https://playtictactoe.org/#google_vignette> - Insperation/ Research of game
+* Rohit Sharma/ Mentor -- For guidence, feedback and suggestions.
 
+### Media
 
-## Media
-* All images used including Logo, icons of skull, crossbones and tie graphic was created by Amber Andrews (me).
-* Background image created by Amber Andrews (me).
-* Font - google fonts https://fonts.google.com/?preview.text=SKULLS%20%26%20CROSSBONES&query=Scrip 
-* Favicon.io <https://favicon.io/favicon-converter/#google_vignette>
+* Font - google fonts <https://fonts.google.com/?preview.text=SKULLS%20%26%20CROSSBONES&query=Scrip>
+* Favicon - Favicon.io <https://favicon.io/favicon-converter/#google_vignette>
+* Icons - Font Awesome https://fontawesome.com/search
+* All Graphics (background image, logo, player graphics ect.) - Amber Andrews (me).
