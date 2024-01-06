@@ -145,9 +145,14 @@ This web document has been tested on the following device screens using google c
 * lighthouse testing (images)
 
 ## Validator Testing
-* html css js w3c & jigsaw (images)
+The entire code underwent thorough validation testing.
+### HTML
+https://validator.w3.org/ - No Errors or Warnings to Show.
+### CSS
+https://jigsaw.w3.org/css-validator/ - No Error Found.
+### Javascript
+https://jshint.com/ - No Error or Warnings.
 
-## Bugs
 
 ## Deployment
 ### Skulls & Crossbones has been deployed to GitHub Pages
