@@ -140,9 +140,12 @@ This web document has been tested on the following device screens using google c
 * Galaxy Tab S4
 * Kindle HDX
 
-### Lighthouse 
+### Lighthouse
 
-* lighthouse testing (images)
+#### Desktop
+
+#### Mobile
+
 
 ## Validator Testing
 The entire code underwent thorough validation testing.
