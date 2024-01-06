@@ -141,10 +141,11 @@ This web document has been tested on the following device screens using google c
 * Kindle HDX
 
 ### Lighthouse
-
 #### Desktop
+![lighthouse_desktop](readme_files/lighthousedesktop.png)
 
 #### Mobile
+![lighthouse_mobile](readme_files/lighthousemobile.png)
 
 
 ## Validator Testing
