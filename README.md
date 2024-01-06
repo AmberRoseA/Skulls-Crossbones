@@ -94,8 +94,26 @@ The ultimate web page adheres closely to several elements from the original desi
 ![mobile_view_wireframes](readme_files/mobiledesign.png)
 
 ## Testing
+### Manual Testing
+Manual testing for this game and its features encompassed multiple rounds, ensuring the following:
+
+* The status text accurately displays information about whose turn is next.
+* The status text correctly reflects the winner of the round when a player achieves a winning sequence.
+* The document consistently recognizes a winner or tied game sequence.
+* Each box in the grid loads the appropriate graphic for the respective player (Skull or Crossbone).
+* A box becomes unselectable if a player has previously chosen it.
+* The game concludes, preventing further box selections, once a winner has been determined.
+* After each round, the scoreboard accurately reflects the numerical points awarded for the winner or tied game.
+  
+Additionally, the testing covered the Reset button functionality, confirming that:
+
+* The Reset button triggers a confirmation pop-up.
+* If confirmed, the grid/game board clears of all graphics.
+* If canceled, the game continues from where it was left off.
+
+  
 * tests on differant browsers 
-* test to confirm game works how its intended 
+
 * lighthouse testing (images)
 
 ## Validator Testing
@@ -104,7 +122,6 @@ The ultimate web page adheres closely to several elements from the original desi
 ## Bugs
 
 ## Deployment
-
 ### Skulls & Crossbones has been deployed to GitHub Pages
 GitHub Deployment Steps -
 * Open the GitHub repository.
