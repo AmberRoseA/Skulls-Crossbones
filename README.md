@@ -64,10 +64,28 @@ This additional step is designed to enhance user experience, serving as a safegu
   
 ![footer](readme_files/footerdesktop.png)
 
-### Future Features
-
 ## UX/UI SECTION
+### Futrue Features
+* Following three distinct focus groups involving trial runs with diverse user types and their invaluable feedback on the final game, potential enhancements for the future include:
+
+##### Player vs. Computer Option
+* Currently, the game supports multiplayer on a shared screen. In future updates, there is a plan to introduce the option for players to face off against the computer, expanding the gaming experience to player vs. computer and player vs. player modes.
+  
+##### Keyboard Control:
+* Although initially considered with lower priority due to time constraints, future iterations may incorporate keyboard controls for desktop users. This enhancement aims to allow users to make moves using keyboard commands, such as Q, W, E, A, S, D, Z, X, C, providing an alternative and potentially more accessible method for playing the game.
+
+##### Styled Confirmation Pop-Up:
+* Future plans for the confirmation pop-up involve refining its appearance to better align with the overall aesthetic of the webpage. This entails incorporating stylistic elements that enhance the visual appeal, moving away from a plain and generic appearance.
+
+##### Winner Display:
+* Upon winning a round, future updates aim to deliver a more impactful and celebratory experience for the player. Potential ideas include:
+* Traditional Naughts and Crosses procedures, such as lines going through the winner.
+* A visually engaging pop-up display at the center of the screen with graphic elements.
+This enhancement is designed to elevate the user experience, making the act of winning more memorable and enjoyable.
+
 ### Wireframes
+
+
 #### Desktop view 
 #### mobile view
 
