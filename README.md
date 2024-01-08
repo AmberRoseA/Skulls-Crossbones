@@ -37,8 +37,7 @@ Directly beneath the game logo, the header or tagline of the game reads: "Rock t
  Central to the entire concept is the game interface itself. It features a conventional Noughts and Crosses grid table, adorned with color styles harmonizing with the overall webpage design while maintaining clarity in each boxed section. When a player clicks on a designated box, a graphical representation of either a skull or crossbone, contingent on the active turn, will be showcased. Once a winner is determined, users will no longer have the option to select additional boxes, and the pertinent information will seamlessly transition to the scoreboards section.
 
 ![game_table](readme_files/gameareadesktop.png)
-![game_table_ipad](readme_files/gameareipad.png)
-![game_table_mobile](readme_files/gameareamobile.png)
+![game_table_ipad](readme_files/gameareipad.png)![game_table_mobile](readme_files/gameareamobile.png)
 ##### Scoreboard:
   Scoreboard – This area is to keeps score on how many games each player has won or how many tied games there have been. Colour styles matched with the grid/game table.
   Each player is labelled with both their graphic and text, there is also a graphic for the tied section.
@@ -64,7 +63,7 @@ This additional step is designed to enhance user experience, serving as a safegu
 ![footer](readme_files/footerdesktop.png)
 
 ## UX/UI SECTION
-### Futrue Features
+### Future Features
  Following three distinct focus groups involving trial runs with diverse user types and their invaluable feedback on the final game, potential enhancements for the future include:
 
 ##### Player vs. Computer Option
@@ -81,6 +80,13 @@ This additional step is designed to enhance user experience, serving as a safegu
 * Traditional Naughts and Crosses procedures, such as lines going through the winner.
 * A visually engaging pop-up display at the center of the screen with graphic elements.
 This enhancement is designed to elevate the user experience, making the act of winning more memorable and enjoyable.
+
+### User Stories
+#### As a Game Player
+* As a player of the game, I desire a visually intuitive interface that clearly indicates where I can make my moves.
+* As a player of the game, I want the ability to reset the game.
+* As a player of the game, I desire the ability to view and track the score.
+* As a player of the game, I want to be presented with information on the winner of each round.
 
 ### Wireframes
 Presented below are the initial design concepts for the game, tailored for both desktop and mobile devices.
