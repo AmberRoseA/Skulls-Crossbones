@@ -113,10 +113,15 @@ Manual testing for this game and its features encompassed multiple rounds, ensur
 Additionally, the testing covered the Reset button functionality, confirming that:
 
 * The Reset button triggers a confirmation pop-up.
+  
 ![reset_confirm_popup](readme_files/manualtestingresetpopup.png)
+
 * If confirmed, the grid/game board clears of all graphics.
+
 ![reset_cleared](readme_files/manualtestingclearreseat.png)
+
 * If canceled, the game continues from where it was left off.
+
 ![reset_cancelled](readme_files/resetcancel.png)
 
 ### Browser Compatibility:

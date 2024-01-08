@@ -39,8 +39,6 @@ let skullScore = 0;
 let tieScore = 0;
 let boneScore = 0;
 
-runGame();
-
 // Functions 
 function runGame() {
     box.forEach(box => box.addEventListener("click", boxClicked));
@@ -130,15 +128,14 @@ function checkWinner() {
 }
 
 /**
- * Restart button--- Clear board 
- */
-restartBtn.addEventListener("click", resetGame);
-
-/**
  * Wont let player start until page has fully loaded
  */
 document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
+    runGame();
+    /**
+ * Restart button--- Clear board 
+ */
+    restartBtn.addEventListener("click", resetGame);
 });
 
 
