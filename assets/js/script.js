@@ -127,19 +127,6 @@ function checkWinner() {
     }
 }
 
-/**
- * Wont let player start until page has fully loaded
- */
-document.addEventListener("DOMContentLoaded", (event) => {
-    runGame();
-    /**
- * Restart button--- Clear board 
- */
-    restartBtn.addEventListener("click", resetGame);
-});
-
-
-
 function resetGame() {
     /**Confirmation user wants game reset*/
     const userConfirmed = confirm("Would you like to Reset Game?");
@@ -163,3 +150,14 @@ function resetGame() {
         statusText.textContent = `${currentPlayer}'s Turn`;
     }    
 }
+
+/**
+ * Wont let player start until page has fully loaded
+ */
+document.addEventListener("DOMContentLoaded", (event) => {
+    runGame();
+    /**
+ * Restart button--- Clear board 
+ */
+    restartBtn.addEventListener("click", resetGame);
+});
